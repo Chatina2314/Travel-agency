@@ -1,10 +1,11 @@
 package model;
-public class Users {
+public class Users extends Passengers{
 	//Attributes
 	private String username = "";
 	private String password = "";
 	//Methods
-	public Users(String pUsername, String pPassword) {
+	public Users(String pUsername, String pPassword, String name, String lastName, String id, int phone, String email, int numLuggage) {
+		super(name, lastName, id, phone, email, numLuggage);
 		username = pUsername;
 		password = pPassword;
 	}
