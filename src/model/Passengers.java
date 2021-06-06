@@ -6,14 +6,16 @@ public class Passengers {
 	private String id = "";
 	private int phone = 0;
 	private String email = "";
+	private int numCompanions = 0;
 	private int numLuggage = 0;
 	//Methods
-	public Passengers(String pName, String pLastName, String pId, int pPhone, String pEmail, int pNumLuggage) {
+	public Passengers(String pName, String pLastName, String pId, int pPhone, String pEmail, int pNumCompanions, int pNumLuggage) {
 		name = pName;
 		lastName = pLastName;
 		id = pId;
 		phone = pPhone;
 		email = pEmail;
+		numCompanions = pNumCompanions;
 		numLuggage = pNumLuggage;
 	}
 	public String getName() {
@@ -45,6 +47,12 @@ public class Passengers {
 	}
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	public int getNumCompanions() {
+		return numCompanions;
+	}
+	public void setNumCompanions(int numCompanions) {
+		this.numCompanions = numCompanions;
 	}
 	public int getNumLuggage() {
 		return numLuggage;

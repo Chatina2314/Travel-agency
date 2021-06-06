@@ -4,8 +4,8 @@ public class Users extends Passengers{
 	private String username = "";
 	private String password = "";
 	//Methods
-	public Users(String pUsername, String pPassword, String name, String lastName, String id, int phone, String email, int numLuggage) {
-		super(name, lastName, id, phone, email, numLuggage);
+	public Users(String pUsername, String pPassword, String name, String lastName, String id, int phone, String email, int numCompanions, int numLuggage) {
+		super(name, lastName, id, phone, email, numCompanions, numLuggage);
 		username = pUsername;
 		password = pPassword;
 	}

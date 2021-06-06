@@ -1,6 +1,7 @@
 package model;
 public class Flights {
 	//Attributes
+	private String idFlight = "";
 	private String origin = "";
 	private String destination = "";
 	private double departureTime = 0;
@@ -9,12 +10,19 @@ public class Flights {
 	private Passengers[]seatings;
 	private Status status;
 	//Methods
-	public Flights(String pOrigin, String pDestination, double pDepartureTime, double pArrivalTime){
+	public Flights(String pIdFlight, String pOrigin, String pDestination, double pDepartureTime, double pArrivalTime){
+		idFlight = pIdFlight;
 		origin = pOrigin;
 		destination = pDestination;
 		departureTime = pDepartureTime;
 		arrivalTime = pArrivalTime;
 		seatings = new Passengers[30];
+	}
+	public String getIdFlight() {
+		return idFlight;
+	}
+	public void setIdFlight(String idFlight) {
+		this.idFlight = idFlight;
 	}
 	public String getOrigin() {
 		return origin;
