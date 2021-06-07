@@ -2,20 +2,22 @@ package model;
 public class Flights {
 	//Attributes
 	private String idFlight = "";
+	private double takeoffDay = 0;
 	private String origin = "";
 	private String destination = "";
 	private double departureTime = 0;
-	private double arrivalTime = 0;
+	private int hoursFlight = 0;
 	//Relations
 	private Passengers[]seatings;
 	private Status status;
 	//Methods
-	public Flights(String pIdFlight, String pOrigin, String pDestination, double pDepartureTime, double pArrivalTime){
+	public Flights(String pIdFlight, double pTakeoffDay, String pOrigin, String pDestination, double pDepartureTime, int pHoursFlight){
 		idFlight = pIdFlight;
+		takeoffDay = pTakeoffDay;
 		origin = pOrigin;
 		destination = pDestination;
 		departureTime = pDepartureTime;
-		arrivalTime = pArrivalTime;
+		hoursFlight = pHoursFlight;
 		seatings = new Passengers[30];
 	}
 	public String getIdFlight() {
@@ -23,6 +25,12 @@ public class Flights {
 	}
 	public void setIdFlight(String idFlight) {
 		this.idFlight = idFlight;
+	}
+	public double getTakeoffDay() {
+		return takeoffDay;
+	}
+	public void setTakeoffDay(double takeoffDay) {
+		this.takeoffDay = takeoffDay;
 	}
 	public String getOrigin() {
 		return origin;
@@ -42,11 +50,11 @@ public class Flights {
 	public void setDepartureTime(double departureTime) {
 		this.departureTime = departureTime;
 	}
-	public double getArrivalTime() {
-		return arrivalTime;
+	public int getHoursFlight() {
+		return hoursFlight;
 	}
-	public void setArrivalTime(double arrivalTime) {
-		this.arrivalTime = arrivalTime;
+	public void setHoursFlight(int hoursFlight) {
+		this.hoursFlight = hoursFlight;
 	}
 	public Passengers[] getSeatings() {
 		return seatings;
