@@ -5,10 +5,37 @@ import javafx.scene.control.TextField;
 public class AgencyGUI {
 	   @FXML
 	    private PasswordField passwordTextField;
-
 	    @FXML
 	    private TextField usernameTextField;
+	    @FXML
+	    private PasswordField createPasswordTextField;
+	    @FXML
+	    private TextField nameTextField;
+	    @FXML
+	    private TextField lastNameTextField;
+	    @FXML
+	    private TextField idTextField;
+	    @FXML
+	    private TextField phoneTextField;
+	    @FXML
+	    private TextField emailTextField;
+	    @FXML
+	    private TextField createUsernameTextField;
+	    @FXML
+	    private TextField idFlightTextField;
+	    @FXML
+	    private TextField originTextField;
+	    @FXML
+	    private TextField destinationTextField;
+	    @FXML
+	    private TextField hoursFlihghtTextField;
+	    @FXML
+	    private TextField departureTimeTextField;
+	    @FXML
+	    private DatePicker takeoffDayTextField;
 
+	    
+	    
 	    @FXML
 	    void goMenu(ActionEvent event) {
 
@@ -18,27 +45,7 @@ public class AgencyGUI {
 	    void goRegister(ActionEvent event) {
 
 	    }
-	    @FXML
-	    private PasswordField createPasswordTextField;
-
-	    @FXML
-	    private TextField nameTextField;
-
-	    @FXML
-	    private TextField lastNameTextField;
-
-	    @FXML
-	    private TextField idTextField;
-
-	    @FXML
-	    private TextField phoneTextField;
-
-	    @FXML
-	    private TextField emailTextField;
-
-	    @FXML
-	    private TextField createUsernameTextField;
-
+	    
 	    @FXML
 	    void createAccount(ActionEvent event) {
 
@@ -57,26 +64,18 @@ public class AgencyGUI {
 	    void goOut(ActionEvent event) {
 
 	    }
-	    @FXML
-	    private TextField idFlightTextField;
-
-	    @FXML
-	    private TextField originTextField;
-
-	    @FXML
-	    private TextField destinationTextField;
-
-	    @FXML
-	    private TextField hoursFlihghtTextField;
-
-	    @FXML
-	    private TextField departureTimeTextField;
-
-	    @FXML
-	    private DatePicker takeoffDayTextField;
-
+	    
 	    @FXML
 	    void bookFlight(ActionEvent event) {
+
+	    }
+
+	    @FXML
+	    void goBack(ActionEvent event) {
+
+	    }
+	    @FXML
+	    void cancelFlight(ActionEvent event) {
 
 	    }
 
