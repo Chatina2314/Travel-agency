@@ -1,7 +1,11 @@
 package ui;
 import javafx.fxml.FXML;
+import javafx.event.ActionEvent;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import model.Flights;
+import model.Passengers;
+import model.Agency;
 public class AgencyGUI {
 	   @FXML
 	    private PasswordField passwordTextField;
@@ -35,7 +39,9 @@ public class AgencyGUI {
 	    private DatePicker takeoffDayTextField;
 
 	    
-	    
+	    public void setPassenger(Passenger pass) {
+	    	
+	    }
 	    @FXML
 	    void goMenu(ActionEvent event) {
 
